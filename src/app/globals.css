@@ -46,7 +46,9 @@
   --color-cream: var(--cream);
   --color-charcoal: var(--charcoal);
   --color-brown: var(--brown);
-  --color-terracotta: var(--terracotta);  
+  --color-terracotta: var(--terracotta);
+  --color-honey: var(--honey);
+  --color-golden-honey: var(--golden-honey);
 
   /* text colors  */
   --color-brand-body: var(--brand-body);
@@ -55,6 +57,8 @@
   --color-brand-highlight: var(--brand-highlight);
   --color-brand-accent: var(--brand-accent);
   --color-brand-inverse: var(--brand-inverse);
+  --color-brand-navlink: var(--brand-navlink);
+  --color-brand-navlink-hover: var(--brand-navlink-hover);
 }
 
 :root {
@@ -65,6 +69,7 @@
   --brown: oklch(0.47 0.08 55); /* Soft Brown (#8B5E3C) */
   --terracotta: oklch(0.67 0.13 40); /* Terracotta (#C4745B) */
   --honey: oklch(0.78 0.15 80);
+  --golden-honey: oklch(0.755 0.128 79.85); /* Honey Gold (#D9A441) */
 
   /* Text colors */
   --brand-body: var(--charcoal); /* Default body text */
@@ -73,6 +78,8 @@
   --brand-highlight: var(--terracotta); /* Highlighted text */
   --brand-accent: var(--honey); /* Accent/emphasis */
   --brand-inverse: var(--cream); /* Text on dark backgrounds */
+  --brand-navlink: var(--charcoal); /* Navigation links */
+  --brand-navlink-hover: var(--golden-honey); /* Hover state for nav links */
 
   --radius: 0.625rem;
   --background: oklch(1 0 0);
@@ -116,6 +123,7 @@
   --brown: oklch(0.47 0.08 55);
   --terracotta: oklch(0.67 0.13 40);
   --honey: oklch(0.78 0.15 80);
+  --golden-honey: oklch(0.755 0.128 79.85);
 
   /* Text colors */
   --brand-body: var(--charcoal); /* Default body text */
@@ -124,6 +132,8 @@
   --brand-highlight: var(--terracotta); /* Highlighted text */
   --brand-accent: var(--honey); /* Accent/emphasis */
   --brand-inverse: var(--cream); /* Text on dark backgrounds */
+  --brand-navlink: var(--charcoal); /* Navigation links */
+  --brand-navlink-hover: var(--cream); /* Hover state for nav links */
 
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
@@ -164,5 +174,9 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+
+  button{
+    @apply cursor-pointer
   }
 }
