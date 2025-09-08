@@ -1,5 +1,6 @@
+import { Navbar } from "@/components/shared/navbar";
 import React from "react";
-import Navbar from "@/components/shared/navbar";
+
 
 function MainLayout({ children }: { children: React.ReactNode }) {
   return <div>
