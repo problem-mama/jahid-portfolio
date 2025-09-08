@@ -13,7 +13,7 @@ const HeroSection = () => {
     >
       <motion.div className="container mx-auto px-2 grid  md:grid-cols-2 md:min-h-[90vh] gap-4  py-5 md:py-10">
         {/* Left section for text content */}
-        <motion.div className="flex order-1 md:order-2 flex-col justify-center items-center md:items-start text-center md:text-left space-y-5">
+        <motion.div className="flex  flex-col justify-center items-center md:items-start text-center md:text-left space-y-5">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -40,7 +40,7 @@ const HeroSection = () => {
           <HeroSectionCTA />
         </motion.div>
         {/* Right section for image and gradient */}
-        <motion.div className="hidden md:flex order-2 md:order-1 justify-center flex-col items-center relative">
+        <motion.div className="hidden md:flex justify-center flex-col items-center relative">
           <motion.div
             animate={{ rotate: 360 }}
             transition={{ repeat: Infinity, duration: 5, ease: "linear" }}
