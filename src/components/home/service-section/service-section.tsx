@@ -41,7 +41,7 @@ const ServiceSection = () => {
   return (
     <motion.div
       id="about"
-      className="bg-beige"
+      className="bg-cream"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 0.5 } }}
     >
@@ -66,11 +66,15 @@ const ServiceSection = () => {
                     <div className="p-2 bg-terracotta/10 rounded-lg">
                       <service.icon className="h-6 w-6 text-brand-highlight" />
                     </div>
-                    <CardTitle className="text-xl text-brand-highlight font-medium">{service.title}</CardTitle>
+                    <CardTitle className="text-xl text-brand-highlight font-medium">
+                      {service.title}
+                    </CardTitle>
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-lg text-brand-body">{service.description}</CardDescription>
+                  <CardDescription className="text-lg text-brand-body">
+                    {service.description}
+                  </CardDescription>
                 </CardContent>
               </Card>
             </motion.div>
