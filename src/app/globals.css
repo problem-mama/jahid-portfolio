@@ -180,3 +180,8 @@
     @apply cursor-pointer
   }
 }
+
+
+.swiper-button-prev, .swiper-button-next{
+  color: var(--brand-highlight) !important;
+}
