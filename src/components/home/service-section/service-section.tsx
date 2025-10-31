@@ -41,14 +41,13 @@ const ServiceSection = () => {
   return (
     <motion.div
       id="about"
-      className="bg-cream"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 0.5 } }}
     >
       <motion.div className="container mx-auto px-4 flex flex-col gap-y-10   py-10 md:py-15">
         <div>
-          <h1 className="text-xl font-bold text-brand-highlight uppercase text-center underline">
-            My Services
+          <h1 className="text-3xl font-extrabold  uppercase text-center">
+            My <span className="text-brand-highlight">Services</span>
           </h1>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -60,7 +59,7 @@ const ServiceSection = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="h-full bg-bg-cream hover:shadow-lg transition-all gap-2 hover:scale-101 border border-terracotta p-4">
+              <Card className="h-full bg-terracotta/10 hover:shadow-lg transition-all gap-2 hover:scale-101 border border-terracotta/10 p-4">
                 <CardHeader className="p-2">
                   <div className="flex items-center space-x-4">
                     <div className="p-2 bg-terracotta/10 rounded-lg">
@@ -72,7 +71,7 @@ const ServiceSection = () => {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-lg text-brand-body">
+                  <CardDescription className="text-lg text-muted-foreground">
                     {service.description}
                   </CardDescription>
                 </CardContent>

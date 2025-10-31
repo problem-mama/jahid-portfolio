@@ -8,14 +8,13 @@ const AboutSection = () => {
   return (
     <motion.div
       id="about"
-      className="bg-cream"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 0.5 } }}
     >
       <motion.div className="container mx-auto px-4 flex flex-col gap-y-10   py-10 md:py-15">
         <div>
-          <h1 className="text-xl font-bold text-brand-highlight uppercase text-center underline">
-            Who am I
+          <h1 className="text-3xl font-bold  uppercase text-center">
+            <span className="text-brand-highlight"> Who </span> am I
           </h1>
         </div>
 
@@ -38,8 +37,8 @@ const AboutSection = () => {
             </div>
           </motion.div>
           <motion.div className="flex flex-col gap-y-5">
-            <motion.h2 className="text-4xl font-bold ">
-              This is jahid Hasan
+            <motion.h2 className="text-5xl font-extrabold uppercase">
+              This is <span className="text-brand-highlight">Jahid Hasan</span>
             </motion.h2>
 
             <motion.div>
@@ -49,11 +48,10 @@ const AboutSection = () => {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="flex flex-col gap-y-3 mb-5"
               >
-                <motion.h4 className="text-xl text-brand-subheading max-w-xl font-medium">
+                <motion.h4 className="text-xl text-muted-foreground max-w-xl font-medium">
                   We help creators and wellness brands with Done-For-You
                   ambience and meditation videos that grow your audience and
-                  keep viewers coming back ambience and meditation videos that
-                  grow your audience and keep viewers coming back
+                  keep viewers coming back for more.
                 </motion.h4>
               </motion.div>
               <motion.div>
@@ -69,7 +67,7 @@ const AboutSection = () => {
                           transition: { duration: 0.2 },
                         }}
                         key={item.id}
-                        className="space-y-2 border border-terracotta p-4 rounded-lg text-center h-[150px] flex flex-col justify-center items-center"
+                        className="space-y-2 border bg-terracotta/10 border-terracotta/10 p-4 rounded-lg text-center h-[150px] flex flex-col justify-center items-center"
                       >
                         <div>
                           <h3 className="text-2xl font-bold text-brand-highlight">

@@ -8,7 +8,7 @@ const roboto = Roboto({
   subsets: ["latin"],
   variable: "--font-roboto",
 });
-
+// here you can add metadata for your application
 export const metadata: Metadata = {
   title: "Jahid's Portfolio",
   description: "Grow Your Audience High-Quality Ambience & Meditation Videos",
@@ -21,7 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` ${roboto.variable} antialiased`}>
+      <body
+        className={` ${roboto.variable} antialiased bg-background text-foreground`}
+      >
         <MainLayout>{children}</MainLayout>
       </body>
     </html>

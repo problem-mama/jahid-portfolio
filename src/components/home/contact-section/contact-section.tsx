@@ -65,7 +65,6 @@ const ContactSection = () => {
   return (
     <motion.div
       id="contact"
-      className="bg-cream"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 0.5 } }}
     >
@@ -80,11 +79,11 @@ const ContactSection = () => {
         >
           <div className="flex items-center justify-center mb-4">
             <MessageCircle className="h-8 w-8 text-brand-highlight mr-3" />
-            <h1 className="text-xl font-bold text-brand-highlight uppercase underline">
-              Get In Touch
+            <h1 className="text-3xl font-bold  uppercase">
+              <span className="text-brand-highlight"> Get In</span> Touch
             </h1>
           </div>
-          <p className="text-lg text-brand-subheading max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Ready to bring your meditation vision to life? Let&apos;s discuss
             your project and create something amazing together.
           </p>
@@ -109,17 +108,17 @@ const ContactSection = () => {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <Card className="bg-cream border border-terracotta/20 hover:border-terracotta/40 transition-all duration-300 hover:shadow-md">
+                  <Card className="bg-background border border-terracotta/20 hover:border-terracotta/40 transition-all duration-300 hover:shadow-md">
                     <CardContent className="p-4">
                       <div className="flex items-start space-x-4">
                         <div className="p-2 bg-terracotta/10 rounded-lg">
                           <method.icon className="h-5 w-5 text-brand-highlight" />
                         </div>
                         <div className="flex-1">
-                          <h3 className="font-semibold text-brand-heading text-sm mb-1">
+                          <h3 className="font-semibold text-muted-foreground text-sm mb-1">
                             {method.title}
                           </h3>
-                          <p className="text-brand-subheading text-xs mb-2">
+                          <p className="text-muted-foreground text-xs mb-2">
                             {method.description}
                           </p>
                           <a
@@ -144,9 +143,9 @@ const ContactSection = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <Card className="bg-cream border border-terracotta/20">
+            <Card className="bg-background border border-terracotta/20">
               <CardContent className="p-6">
-                <h2 className="text-2xl font-bold text-brand-heading mb-6">
+                <h2 className="text-2xl font-bold text-brand-highlight mb-6">
                   Send a Message
                 </h2>
 
@@ -161,7 +160,7 @@ const ContactSection = () => {
                     >
                       <Label
                         htmlFor={field.id}
-                        className="text-brand-heading font-medium"
+                        className="text-white font-medium"
                       >
                         {field.label}
                         {field.required && (
@@ -189,10 +188,7 @@ const ContactSection = () => {
                     transition={{ duration: 0.5, delay: 0.6 }}
                     viewport={{ once: true }}
                   >
-                    <Label
-                      htmlFor="message"
-                      className="text-brand-heading font-medium"
-                    >
+                    <Label htmlFor="message" className="text-white font-medium">
                       Project Details
                       <span className="text-brand-highlight ml-1">*</span>
                     </Label>

@@ -49,6 +49,7 @@
   --color-terracotta: var(--terracotta);
   --color-honey: var(--honey);
   --color-golden-honey: var(--golden-honey);
+  --color-white: var(--color-white);
 
   /* text colors  */
   --color-brand-body: var(--brand-body);
@@ -70,20 +71,21 @@
   --terracotta: oklch(0.67 0.13 40); /* Terracotta (#C4745B) */
   --honey: oklch(0.78 0.15 80);
   --golden-honey: oklch(0.755 0.128 79.85); /* Honey Gold (#D9A441) */
+  --color-white: oklch(0.985 0 0);
 
   /* Text colors */
-  --brand-body: var(--charcoal); /* Default body text */
-  --brand-heading: var(--charcoal); /* Strong headings */
-  --brand-subheading: var(--brown); /* Warm subheadings */
+  --brand-body: var(--white); /* Default body text */
+  --brand-heading: var(--white); /* Strong headings */
+  --brand-subheading: var(--white); /* Warm subheadings */
   --brand-highlight: var(--terracotta); /* Highlighted text */
   --brand-accent: var(--honey); /* Accent/emphasis */
   --brand-inverse: var(--cream); /* Text on dark backgrounds */
-  --brand-navlink: var(--charcoal); /* Navigation links */
+  --brand-navlink: var(--white); /* Navigation links */
   --brand-navlink-hover: var(--golden-honey); /* Hover state for nav links */
 
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
@@ -124,6 +126,7 @@
   --terracotta: oklch(0.67 0.13 40);
   --honey: oklch(0.78 0.15 80);
   --golden-honey: oklch(0.755 0.128 79.85);
+  --color-white: oklch(0.985 0 0);
 
   /* Text colors */
   --brand-body: var(--charcoal); /* Default body text */
@@ -132,10 +135,10 @@
   --brand-highlight: var(--terracotta); /* Highlighted text */
   --brand-accent: var(--honey); /* Accent/emphasis */
   --brand-inverse: var(--cream); /* Text on dark backgrounds */
-  --brand-navlink: var(--charcoal); /* Navigation links */
+  --brand-navlink: var(--white); /* Navigation links */
   --brand-navlink-hover: var(--cream); /* Hover state for nav links */
 
-  --background: oklch(0.145 0 0);
+  --background: oklch(0.1398 0 0);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
@@ -184,4 +187,9 @@
 
 .swiper-button-prev, .swiper-button-next{
   color: var(--brand-highlight) !important;
+}
+
+
+.black-overlay{
+      background-image: linear-gradient(90deg, #090909 17%, #090909e6 35%, var(--transparent));
 }

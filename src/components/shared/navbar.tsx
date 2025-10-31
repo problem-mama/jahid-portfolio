@@ -21,9 +21,9 @@ export function Navbar() {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className=" bg-cream  border-b border-cream/20"
+      className="fixed w-full z-50 top-3  backdrop-blur-md"
     >
-      <div className="container mx-auto px-4 ">
+      <div className="container mx-auto px-4 border border-terracotta rounded-xl">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <motion.div
@@ -31,7 +31,9 @@ export function Navbar() {
             whileTap={{ scale: 0.95 }}
             className="flex-shrink-0"
           >
-            <h1 className="text-xl font-bold text-brand-highlight uppercase">Jahid Visuals</h1>
+            <h1 className="text-4xl font-extrabold text-white uppercase">
+              <span className="text-brand-highlight">Jahid</span> Visuals
+            </h1>
           </motion.div>
 
           {/* Desktop Navigation */}

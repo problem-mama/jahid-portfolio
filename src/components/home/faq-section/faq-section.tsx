@@ -19,7 +19,6 @@ const FaqSection = () => {
   return (
     <motion.div
       id="faq"
-      className="bg-beige"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 0.5 } }}
     >
@@ -34,11 +33,11 @@ const FaqSection = () => {
         >
           <div className="flex items-center justify-center mb-4">
             <HelpCircle className="h-8 w-8 text-brand-highlight mr-3" />
-            <h1 className="text-xl font-bold text-brand-highlight uppercase underline">
+            <h1 className="text-3xl font-bold uppercase">
               Frequently Asked Questions
             </h1>
           </div>
-          <p className="text-lg text-brand-subheading max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Got questions? We&apos;ve got answers. Here are the most common
             questions about our meditation video services.
           </p>
@@ -55,7 +54,7 @@ const FaqSection = () => {
               viewport={{ once: true }}
               className="w-full"
             >
-              <Card className="bg-cream border border-terracotta/20 hover:border-terracotta/40 transition-all duration-300">
+              <Card className="bg-background border border-terracotta/20 hover:border-terracotta/40 transition-all duration-300">
                 <CardContent className="p-0">
                   <button
                     onClick={() => toggleItem(faq.id)}
@@ -63,7 +62,7 @@ const FaqSection = () => {
                   >
                     <h3
                       className={cn(
-                        "text-lg font-semibold text-brand-heading pr-4",
+                        "text-lg font-semibold text-white pr-4",
                         !openItems.includes(faq.id) && "truncate"
                       )}
                     >
@@ -92,7 +91,7 @@ const FaqSection = () => {
                   >
                     <div className="px-6 pb-4">
                       <div className="border-t border-terracotta/10 pt-4">
-                        <p className="text-brand-body leading-relaxed">
+                        <p className="text-muted-foreground leading-relaxed">
                           {faq.answer}
                         </p>
                       </div>

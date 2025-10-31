@@ -27,7 +27,6 @@ const TestimonialSection = () => {
   return (
     <motion.div
       id="testimonials"
-      className="bg-beige"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 0.5 } }}
     >
@@ -40,10 +39,10 @@ const TestimonialSection = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-          <h1 className="text-xl font-bold text-brand-highlight uppercase underline mb-4">
-            What Clients Say
+          <h1 className="text-3xl font-extrabold  uppercase mb-4">
+            What <span className="text-brand-highlight">Clients Say</span>
           </h1>
-          <p className="text-lg text-brand-subheading max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Don&apos;t just take our word for it. Here&apos;s what our satisfied
             clients have to say about their experience working with us.
           </p>
@@ -73,10 +72,10 @@ const TestimonialSection = () => {
                   transition: { duration: 0.2 },
                 }}
               >
-                <Card className="h-full max-w-2xl mx-auto bg-cream border border-terracotta/20 hover:border-terracotta/40 transition-all duration-300 hover:shadow-lg">
+                <Card className="h-full max-w-2xl mx-auto bg-terracotta/10 border border-terracotta/10 hover:border-terracotta/40 transition-all duration-300 hover:shadow-lg">
                   <CardContent className="p-6 h-full ">
                     {/* Quote Icon */}
-                    <div className="w-full flex flex-col !justify-center !items-center">
+                    <div className="w-full flex flex-col  items-center">
                       <div className="flex justify-center mb-4">
                         <Quote className="h-8 w-8 text-brand-highlight/60" />
                       </div>
@@ -86,7 +85,7 @@ const TestimonialSection = () => {
                       </div>
 
                       {/* Testimonial Content */}
-                      <p className="text-brand-body text-base leading-relaxed mb-6 flex-grow max-w-2xl mx-auto">
+                      <p className="text-white text-base leading-relaxed mb-6 flex-grow max-w-2xl mx-auto">
                         &quot;{testimonial.content}&quot;
                       </p>
 
@@ -107,13 +106,13 @@ const TestimonialSection = () => {
                             </AvatarFallback>
                           </Avatar>
                           <div className="flex-1">
-                            <h4 className="font-semibold text-brand-heading text-sm">
+                            <h4 className="text-white font-semibold text-sm">
                               {testimonial.name}
                             </h4>
-                            <p className="text-brand-subheading text-xs">
+                            <p className="text-white text-xs">
                               {testimonial.role}
                             </p>
-                            <p className="text-brand-subheading text-xs font-medium">
+                            <p className="text-white text-xs font-medium">
                               {testimonial.company}
                             </p>
                           </div>
