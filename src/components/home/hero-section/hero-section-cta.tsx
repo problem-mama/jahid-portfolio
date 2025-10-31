@@ -13,7 +13,7 @@ function HeroSectionCTA() {
     >
       <Button
         size="lg"
-        className="bg-[#C4745B]  hover:bg-[#C4745B]/90 text-[#FDFBF7] px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 "
+        className="bg-[#C4745B]  hover:bg-[#C4745B]/90 text-[#FDFBF7] px-12 py-8 text-lg font-semibold rounded-lg transition-all duration-300 "
       >
         <Play className="mr-2 h-5 w-5" />
         Work with me
@@ -21,7 +21,7 @@ function HeroSectionCTA() {
       <Button
         variant="outline"
         size="lg"
-        className="border-2 border-[#D9A441] text-[#D9A441] hover:bg-[#D9A441] hover:text-[#2F2F2F] px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300  bg-transparent"
+        className="border-2 border-white text-white hover:bg-white hover:text-[#2F2F2F] px-12 py-8 text-lg font-semibold rounded-lg transition-all duration-300  bg-transparent"
       >
         <Video className="mr-2 h-5 w-5" />
         See my work

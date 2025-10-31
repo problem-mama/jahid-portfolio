@@ -6,17 +6,17 @@ export default function PortfolioSection() {
   const getVideosByCategory = (category: string) =>
     mockVideos.filter((video) => video.category === category);
   return (
-    <div id="portfolio" className="bg-beige">
+    <div id="portfolio">
       <div className="container mx-auto px-4 flex flex-col gap-y-10 py-10 md:py-15">
-        <h1 className="text-xl font-bold text-brand-highlight uppercase text-center underline">
-          Portfolio
+        <h1 className="text-3xl font-extrabold uppercase text-center">
+          My <span className="text-brand-highlight"> Portfolio</span>
         </h1>
 
         <Tabs defaultValue="Relaxation" className="w-full">
-          <TabsList className="grid grid-cols-4 gap-2 items-center h-12 mb-2 bg-cream rounded-lg border border-border">
+          <TabsList className="grid grid-cols-4 gap-2 items-center h-12 mb-2 bg-terracotta/10 rounded-lg border border-terracotta/20 p-1">
             {categories.map((cat) => (
               <TabsTrigger
-                className="text-brand-navlink data-[state=active]:bg-terracotta data-[state=active]:text-brand-inverse data-[state=active]:shadow-md hover:bg-cream hover:text-brand-accent rounded-lg transition-all duration-200"
+                className=" data-[state=active]:bg-terracotta data-[state=active]:text-brand-inverse data-[state=active]:shadow-md hover:bg-terracotta  rounded-lg transition-all duration-200"
                 key={cat}
                 value={cat}
               >
