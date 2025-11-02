@@ -12,12 +12,6 @@ const AboutSection = () => {
       animate={{ opacity: 1, transition: { duration: 0.5 } }}
     >
       <motion.div className="container mx-auto px-4 flex flex-col gap-y-10   py-10 md:py-15">
-        <div>
-          <h1 className="text-3xl font-bold  uppercase text-center">
-            <span className="text-brand-highlight"> Who </span> am I
-          </h1>
-        </div>
-
         {/* Content section */}
         <motion.div className="grid md:grid-cols-2 gap-10">
           <motion.div
@@ -28,17 +22,17 @@ const AboutSection = () => {
           >
             <div>
               <Image
-                src="/professional-portrait-photo-for-meditation-content.jpg"
+                src="/jahid_hasan.png"
                 alt="Profile"
-                height={600}
-                width={600}
+                height={700}
+                width={700}
                 className="rounded-2xl object-cover"
               />
             </div>
           </motion.div>
           <motion.div className="flex flex-col gap-y-5">
             <motion.h2 className="text-5xl font-extrabold uppercase">
-              This is <span className="text-brand-highlight">Jahid Hasan</span>
+              HI, I&apos;M <span className="gradient-text10">Jahid</span>
             </motion.h2>
 
             <motion.div>
@@ -49,9 +43,13 @@ const AboutSection = () => {
                 className="flex flex-col gap-y-3 mb-5"
               >
                 <motion.h4 className="text-xl text-muted-foreground max-w-xl font-medium">
-                  We help creators and wellness brands with Done-For-You
-                  ambience and meditation videos that grow your audience and
-                  keep viewers coming back for more.
+                  I&apos;m Jahid, the creator behind Jahid Visuals. I specialize
+                  in ambience and relaxation content, crafting long-form visuals
+                  featuring rain, fire, snow, autumn forests, Christmas and
+                  Halloween moods, natural scenes like rivers and beaches, and
+                  cozy fireplace settings. I help YouTube creators and
+                  businesses grow their audience through high-quality, premium,
+                  and exclusive videos.
                 </motion.h4>
               </motion.div>
               <motion.div>
@@ -67,19 +65,16 @@ const AboutSection = () => {
                           transition: { duration: 0.2 },
                         }}
                         key={item.id}
-                        className="space-y-2 border bg-terracotta/10 border-terracotta/10 p-4 rounded-lg text-center h-[150px] flex flex-col justify-center items-center"
+                        className="space-y-2 border bg-brand-secondary/10 border-brand-secondary/10 p-4 rounded-lg text-center h-[150px] flex flex-col justify-center items-center"
                       >
                         <div>
-                          <h3 className="text-2xl font-bold text-brand-highlight">
+                          <h3 className="text-2xl font-bold text-brand-secondary">
                             {item.count}
                           </h3>
                           <h4 className="text-xl  font-bold text-brand-subheading">
                             {item.title}
                           </h4>
                         </div>
-                        <p className="text-md font-normal text-brand-body">
-                          {item.description}
-                        </p>
                       </motion.div>
                     ))}
                   </div>

@@ -10,8 +10,8 @@ const roboto = Roboto({
 });
 // here you can add metadata for your application
 export const metadata: Metadata = {
-  title: "Jahid's Portfolio",
-  description: "Grow Your Audience High-Quality Ambience & Meditation Videos",
+  title: "Jahid visuals",
+  description: "Grow your audience with premium ambience videos",
 };
 
 export default function RootLayout({

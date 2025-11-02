@@ -5,13 +5,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import * as motion from "framer-motion/client";
 import { Mail, Phone, MapPin, Send, MessageCircle } from "lucide-react";
 import { contactInfo, contactFormFields } from "../helper";
@@ -78,14 +71,15 @@ const ContactSection = () => {
           className="text-center"
         >
           <div className="flex items-center justify-center mb-4">
-            <MessageCircle className="h-8 w-8 text-brand-highlight mr-3" />
-            <h1 className="text-3xl font-bold  uppercase">
-              <span className="text-brand-highlight"> Get In</span> Touch
+            <MessageCircle className="h-8 w-8 text-brand-primary mr-3" />
+            <h1 className="text-4xl font-bold  uppercase">
+              <span className="gradient-text10"> Get In</span> Touch
             </h1>
           </div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Ready to bring your meditation vision to life? Let&apos;s discuss
-            your project and create something amazing together.
+            Ready to elevate your brand with premium ambience and meditation
+            visuals? Let&apos;s connect to discuss your goals and create
+            exceptional content that resonates with your audience.
           </p>
         </motion.div>
 
@@ -99,7 +93,7 @@ const ContactSection = () => {
             className="space-y-6"
           >
             {/* Contact Methods */}
-            <div className="space-y-4">
+            <div className="space-y-6">
               {contactMethods.map((method, index) => (
                 <motion.div
                   key={method.title}
@@ -108,11 +102,11 @@ const ContactSection = () => {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <Card className="bg-background border border-terracotta/20 hover:border-terracotta/40 transition-all duration-300 hover:shadow-md">
+                  <Card className="bg-background border border-brand-secondary/20 hover:border-brand-secondary/40 transition-all duration-300 hover:shadow-md">
                     <CardContent className="p-4">
                       <div className="flex items-start space-x-4">
-                        <div className="p-2 bg-terracotta/10 rounded-lg">
-                          <method.icon className="h-5 w-5 text-brand-highlight" />
+                        <div className="p-2 bg-brand-secondary/10 rounded-lg">
+                          <method.icon className="h-5 w-5 text-brand-secondary" />
                         </div>
                         <div className="flex-1">
                           <h3 className="font-semibold text-muted-foreground text-sm mb-1">
@@ -123,7 +117,7 @@ const ContactSection = () => {
                           </p>
                           <a
                             href={method.href}
-                            className="text-brand-highlight text-sm font-medium hover:underline"
+                            className="text-brand-secondary text-sm font-medium hover:underline"
                           >
                             {method.value}
                           </a>
@@ -143,13 +137,9 @@ const ContactSection = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <Card className="bg-background border border-terracotta/20">
+            <Card className="bg-background border border-brand-secondary/20">
               <CardContent className="p-6">
-                <h2 className="text-2xl font-bold text-brand-highlight mb-6">
-                  Send a Message
-                </h2>
-
-                <form onSubmit={handleSubmit} className="space-y-4">
+                <form onSubmit={handleSubmit} className="space-y-6">
                   {contactFormFields.map((field, index) => (
                     <motion.div
                       key={field.id}
@@ -160,11 +150,11 @@ const ContactSection = () => {
                     >
                       <Label
                         htmlFor={field.id}
-                        className="text-white font-medium"
+                        className="text-brand-secondary font-medium mb-2"
                       >
                         {field.label}
                         {field.required && (
-                          <span className="text-brand-highlight ml-1">*</span>
+                          <span className="text-brand-secondary ml-1">*</span>
                         )}
                       </Label>
 
@@ -188,9 +178,12 @@ const ContactSection = () => {
                     transition={{ duration: 0.5, delay: 0.6 }}
                     viewport={{ once: true }}
                   >
-                    <Label htmlFor="message" className="text-white font-medium">
+                    <Label
+                      htmlFor="message"
+                      className="text-brand-secondary font-medium mb-2"
+                    >
                       Project Details
-                      <span className="text-brand-highlight ml-1">*</span>
+                      <span className="text-brand-secondary ml-1">*</span>
                     </Label>
                     <Textarea
                       id="message"
@@ -213,7 +206,7 @@ const ContactSection = () => {
                   >
                     <Button
                       type="submit"
-                      className="w-full bg-brand-highlight text-brand-inverse hover:bg-brand-highlight/90 transition-colors duration-300"
+                      className="w-full primary-button-gradient transition-colors py-7 duration-300"
                     >
                       <Send className="h-4 w-4 mr-2" />
                       Send Message

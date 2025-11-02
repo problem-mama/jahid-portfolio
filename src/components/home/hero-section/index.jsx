@@ -28,12 +28,11 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-brand-highlight uppercase"
+            className="text-4xl md:text-6xl lg:text-7xl font-extrabold uppercase"
           >
-            Grow Your Audience With <br />
-            <span className="text-white">
-              High-Quality Ambience & Meditation Videos
-            </span>
+            <span className="gradient-text10">GROW YOUR AUDIENCE WITH</span>
+            <br />
+            <span className="text-white">PREMIUM AMBIENCE VIDEOS</span>
           </motion.h1>
 
           {/* Subtitle */}
@@ -41,7 +40,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-xl md:text-2xl text-muted-foreground max-w-xl font-medium"
+            className="text-xl md:text-2xl text-white/90 max-w-xl font-medium"
           >
             We help creators and wellness brands with Done-For-You ambience and
             meditation videos that grow your audience and keep viewers coming

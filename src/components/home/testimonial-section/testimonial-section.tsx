@@ -39,8 +39,8 @@ const TestimonialSection = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-          <h1 className="text-3xl font-extrabold  uppercase mb-4">
-            What <span className="text-brand-highlight">Clients Say</span>
+          <h1 className="text-4xl font-extrabold  uppercase mb-4">
+            What <span className="gradient-text10">Clients Say</span>
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Don&apos;t just take our word for it. Here&apos;s what our satisfied
@@ -72,12 +72,12 @@ const TestimonialSection = () => {
                   transition: { duration: 0.2 },
                 }}
               >
-                <Card className="h-full max-w-2xl mx-auto bg-terracotta/10 border border-terracotta/10 hover:border-terracotta/40 transition-all duration-300 hover:shadow-lg">
+                <Card className="h-full max-w-2xl mx-auto bg-brand-secondary/10 border border-brand-secondary/10 hover:border-brand-secondary/40 transition-all duration-300 hover:shadow-lg">
                   <CardContent className="p-6 h-full ">
                     {/* Quote Icon */}
                     <div className="w-full flex flex-col  items-center">
                       <div className="flex justify-center mb-4">
-                        <Quote className="h-8 w-8 text-brand-highlight/60" />
+                        <Quote className="h-8 w-8 text-brand-secondary" />
                       </div>
                       {/* Rating */}
                       <div className="flex items-center justify-center mb-4">
@@ -92,13 +92,13 @@ const TestimonialSection = () => {
                       {/* Client Info */}
                       <div>
                         <div className="flex items-center w-full space-x-3">
-                          <Avatar className="h-12 w-12 border-2 border-terracotta/20">
+                          <Avatar className="h-12 w-12 border-2 border-brand-secondary/20">
                             <AvatarImage
                               src={testimonial.avatar}
                               alt={testimonial.name}
                               className="object-cover"
                             />
-                            <AvatarFallback className="bg-terracotta/10 text-brand-highlight font-semibold">
+                            <AvatarFallback className="bg-brand-secondary/10 text-brand-secondary font-semibold">
                               {testimonial.name
                                 .split(" ")
                                 .map((n) => n[0])

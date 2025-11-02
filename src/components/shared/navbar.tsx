@@ -23,7 +23,7 @@ export function Navbar() {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className="fixed w-full z-50 top-3  backdrop-blur-md"
     >
-      <div className="container mx-auto px-4 border border-terracotta rounded-xl">
+      <div className="container mx-auto px-4 border border-brand-primary/40 rounded-xl">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <motion.div
@@ -32,7 +32,7 @@ export function Navbar() {
             className="flex-shrink-0"
           >
             <h1 className="text-4xl font-extrabold text-white uppercase">
-              <span className="text-brand-highlight">Jahid</span> Visuals
+              <span className="gradient-text10">Jahid</span> Visuals
             </h1>
           </motion.div>
 
@@ -93,7 +93,7 @@ export function Navbar() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="md:hidden bg-cream/95 backdrop-blur-md border-t border-cream/20"
+            className="md:hidden bg-teracotta/95 backdrop-blur-md border-t border-teracotta/20"
           >
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               {navItems.map((item, index) => (

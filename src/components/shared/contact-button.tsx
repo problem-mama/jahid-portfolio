@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 function ContactButton() {
   return (
-    <Button className="bg-terracotta hover:bg-terracotta/90 font-medium">
+    <Button className="primary-button-gradient font-medium">
       <motion.span>Get Started</motion.span>
     </Button>
   );

@@ -51,6 +51,9 @@
   --color-golden-honey: var(--golden-honey);
   --color-white: var(--color-white);
 
+  --color-brand-primary: var(--brand-primary);
+  --color-brand-secondary: var(--brand-secondary);
+
   /* text colors  */
   --color-brand-body: var(--brand-body);
   --color-brand-heading: var(--brand-heading);
@@ -68,10 +71,15 @@
   --cream: oklch(0.99 0.01 95); /* Cream White (#FDFBF7) */
   --charcoal: oklch(0.27 0.01 285); /* Deep Charcoal (#2F2F2F) */
   --brown: oklch(0.47 0.08 55); /* Soft Brown (#8B5E3C) */
-  --terracotta: oklch(0.67 0.13 40); /* Terracotta (#C4745B) */
-  --honey: oklch(0.78 0.15 80);
+  --terracotta: oklch(0.4261 0.162 31.66); /* Terracotta (#C4745B) */
+  --honey: oklch(0.6785 0.1629 57.57);
   --golden-honey: oklch(0.755 0.128 79.85); /* Honey Gold (#D9A441) */
   --color-white: oklch(0.985 0 0);
+
+  /* brand color */
+
+  --brand-primary: oklch(0.4261 0.162 31.66);
+  --brand-secondary: oklch(0.6785 0.1629 57.57);
 
   /* Text colors */
   --brand-body: var(--white); /* Default body text */
@@ -81,7 +89,7 @@
   --brand-accent: var(--honey); /* Accent/emphasis */
   --brand-inverse: var(--cream); /* Text on dark backgrounds */
   --brand-navlink: var(--white); /* Navigation links */
-  --brand-navlink-hover: var(--golden-honey); /* Hover state for nav links */
+  --brand-navlink-hover: var(--brand-secondary); /* Hover state for nav links */
 
   --radius: 0.625rem;
   --background: oklch(0.145 0 0);
@@ -123,10 +131,13 @@
   --cream: oklch(0.99 0.01 95);
   --charcoal: oklch(0.27 0.01 285);
   --brown: oklch(0.47 0.08 55);
-  --terracotta: oklch(0.67 0.13 40);
-  --honey: oklch(0.78 0.15 80);
+  --terracotta: oklch(0.4261 0.162 31.66);
+  --honey: oklch(0.6785 0.1629 57.57);
   --golden-honey: oklch(0.755 0.128 79.85);
   --color-white: oklch(0.985 0 0);
+
+  --brand-primary: oklch(0.4261 0.162 31.66);
+  --brand-secondary: oklch(0.6785 0.1629 57.57);
 
   /* Text colors */
   --brand-body: var(--charcoal); /* Default body text */
@@ -136,7 +147,7 @@
   --brand-accent: var(--honey); /* Accent/emphasis */
   --brand-inverse: var(--cream); /* Text on dark backgrounds */
   --brand-navlink: var(--white); /* Navigation links */
-  --brand-navlink-hover: var(--cream); /* Hover state for nav links */
+  --brand-navlink-hover: var(--brand-secondary); /* Hover state for nav links */
 
   --background: oklch(0.1398 0 0);
   --foreground: oklch(0.985 0 0);
@@ -192,4 +203,42 @@
 
 .black-overlay{
       background-image: linear-gradient(90deg, #090909 17%, #090909e6 35%, var(--transparent));
+}
+
+
+.gradient-text10 {
+    background: linear-gradient(to right, var(--brand-primary), var(--brand-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.primary-background-gradient {
+    background: linear-gradient(90deg, var(--brand-primary), var(--brand-secondary));
+}
+
+.primary-background-gradient-light {
+    background: linear-gradient(90deg, var(--brand-primary)80, var(--brand-secondary)80);
+}
+
+.secondary-background-gradient {
+    background: linear-gradient(90deg, var(--brand-secondary), var(--brand-primary));
+}
+
+.primary-button-gradient {
+    background: linear-gradient(90deg, var(--brand-primary), var(--brand-secondary));
+}
+
+
+@font-face {
+	font-family: 'Druk Cyr';
+	src: url('../../public/fonts/DrukCyr-Heavy.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+
+h1,h2{
+    font-family: 'Druk Cyr', sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 1px;
 }
