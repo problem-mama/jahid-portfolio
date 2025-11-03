@@ -87,57 +87,57 @@ export const testimonials = [
 export const faqs = [
   {
     id: 1,
-    question: "How long does it take to create a custom meditation video?",
+    question: "How do we get started?",
     answer:
-      "Typically, custom meditation videos take 3-5 business days to complete, depending on the complexity and specific requirements. For rush orders, we can deliver within 24-48 hours with an express fee.",
+      "Simply reach out using any of our contact options to share your vision with us. Once we understand your goals and ideas, we’ll align on the details and begin working on your project. I personally recommend a quick 30-minute call, it’s the best way for both of us to connect, discuss everything clearly, and ensure we’re perfectly on the same page before starting.",
   },
   {
     id: 2,
-    question: "What formats do you deliver the videos in?",
+    question: "Can you create videos based on my idea?",
     answer:
-      "We deliver videos in multiple formats including MP4, MOV, and AVI. All videos come in 1080p HD quality by default, with 4K available upon request. We also provide different aspect ratios (16:9, 9:16, 1:1) for various platforms.",
+      "Yes, absolutely! You can share any concept or idea you have in mind, no matter how complex. With strong expertise in editing software like After Effects, we can bring your vision to life with precision and creativity.",
   },
   {
     id: 3,
-    question: "Do you provide commercial usage rights?",
+    question: "How Are the Videos Made?",
     answer:
-      "Yes, all our videos come with full commercial usage rights. You can use them for monetization, branding, marketing, and any commercial purposes without additional licensing fees.",
+      "I start by creating an image using Midjourney, then refine and adjust it in Photoshop. Once the image is ready, I animate it using After Effects to bring the visuals to life.",
   },
   {
     id: 4,
-    question: "Can you match my brand's aesthetic and color scheme?",
+    question: "Do you provide commercial usage rights?",
     answer:
-      "Absolutely! We work closely with clients to understand their brand identity, color palette, and aesthetic preferences. Our videos are fully customizable to align with your brand's visual style and messaging.",
+      "Yes, all our videos include full commercial usage rights, meaning you can use them for monetization, branding, marketing, or any other commercial purpose without extra licensing fees. They are fully monetizable on YouTube and suitable for all social media platforms.",
   },
   {
     id: 5,
-    question: "What's included in your video packages?",
+    question: "How long does it take to create a custom video?",
     answer:
-      "Our packages include custom ambience videos, meditation soundtracks, multiple format deliveries, commercial usage rights, and unlimited revisions. Premium packages also include thumbnail designs and social media variations.",
+      "Custom videos are usually completed within 1–2 business days, depending on their complexity and specific requirements. For bulk orders, the overall turnaround time is often shorter as multiple videos can be processed efficiently.",
   },
   {
     id: 6,
-    question: "Do you offer bulk discounts for multiple videos?",
+    question: "What if I'm not satisfied with the final video?",
     answer:
-      "Yes, we offer attractive bulk pricing for orders of 5+ videos. The more videos you order, the greater the discount. Contact us for a custom quote based on your specific needs and volume.",
+      "We provide several revisions to ensure you are completely satisfied with the result. Your satisfaction is our top priority, and we work closely with you throughout the process to make sure the final video meets and exceeds your expectations.",
   },
   {
     id: 7,
-    question: "What if I'm not satisfied with the final video?",
+    question: "Do you offer discounts for multiple videos?",
     answer:
-      "We offer unlimited revisions until you're completely satisfied. Your happiness is our priority, and we work closely with you throughout the process to ensure the final product exceeds your expectations.",
+      "Yes, we offer special bulk pricing for orders with multiple videos. The more videos you order, the higher the discount. Contact us for a personalized quote tailored to your specific needs and order volume.",
   },
   {
     id: 8,
-    question: "Do you create videos for specific meditation techniques?",
+    question: "How long can you make the videos?",
     answer:
-      "Yes, we specialize in various meditation techniques including mindfulness, guided meditation, breathing exercises, body scans, and visualization. We can create custom content for any specific technique or style you prefer.",
+      "Our videos can range from 30 seconds to 1 hour, 2 hours, 5 hours, 8 hours, or even 12 hours, depending on your needs. For 24-hour live streams, we can create a seamless loop file that allows you to stream continuously for years without interruption.",
   },
 ];
 
 export const contactInfo = {
-  email: "jahid@meditationvideos.com",
-  phone: "+1 (555) 123-4567",
+  email: "dreamyjahidul@gmail.com",
+  phone: "+8801777333714",
   address: "123 Wellness Street, Mindful City, MC 12345",
   socialMedia: {
     instagram: "https://instagram.com/jahidmeditation",

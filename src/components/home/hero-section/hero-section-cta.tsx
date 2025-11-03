@@ -13,7 +13,7 @@ function HeroSectionCTA() {
     >
       <Button
         size="lg"
-        className="primary-button-gradient  px-12 py-8 text-lg font-semibold rounded-lg transition-all duration-300 "
+        className="primary-button-gradient  px-12 py-8 text-lg font-semibold rounded-lg transition-all duration-300 uppercase"
       >
         <Play className="mr-2 h-5 w-5" />
         Work with me
@@ -21,7 +21,7 @@ function HeroSectionCTA() {
       <Button
         variant="outline"
         size="lg"
-        className="border-2 border-brand-secondary text-brand-secondary hover:bg-brand-secondary hover:text-white px-12 py-8 text-lg font-semibold rounded-lg transition-all duration-300  bg-transparent"
+        className="border-2 border-brand-secondary text-brand-secondary hover:bg-brand-secondary hover:text-white px-12 py-8 text-lg font-semibold rounded-lg transition-all duration-300  bg-transparent uppercase"
       >
         <Video className="mr-2 h-5 w-5" />
         See my work

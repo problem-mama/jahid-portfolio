@@ -33,12 +33,12 @@ const FaqSection = () => {
         >
           <div className="flex items-center justify-center mb-4">
             <HelpCircle className="h-8 w-8 text-brand-highlight mr-3" />
-            <h1 className="text-4xl font-bold uppercase">
+            <h1 className="text-5xl font-bold uppercase">
               <span className="gradient-text10"> Frequently Asked</span>{" "}
               Questions
             </h1>
           </div>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Got questions? We&apos;ve got answers. Here are the most common
             questions about our meditation video services.
           </p>
@@ -63,7 +63,7 @@ const FaqSection = () => {
                   >
                     <h3
                       className={cn(
-                        "text-lg font-semibold text-white pr-4",
+                        "text-xl font-semibold text-white pr-4",
                         !openItems.includes(faq.id) && "truncate"
                       )}
                     >
@@ -92,7 +92,7 @@ const FaqSection = () => {
                   >
                     <div className="px-6 pb-4">
                       <div className="border-t border-brand-secondary/10 pt-4">
-                        <p className="text-muted-foreground leading-relaxed">
+                        <p className="text-lg text-muted-foreground leading-relaxed">
                           {faq.answer}
                         </p>
                       </div>

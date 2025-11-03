@@ -42,7 +42,7 @@ const ContactSection = () => {
     {
       icon: Phone,
       title: "Call Us",
-      description: "Mon-Fri from 9am to 6pm",
+      description: "Call us Anytime",
       value: contactInfo.phone,
       href: `tel:${contactInfo.phone}`,
     },
@@ -72,11 +72,11 @@ const ContactSection = () => {
         >
           <div className="flex items-center justify-center mb-4">
             <MessageCircle className="h-8 w-8 text-brand-primary mr-3" />
-            <h1 className="text-4xl font-bold  uppercase">
+            <h1 className="text-5xl font-bold  uppercase">
               <span className="gradient-text10"> Get In</span> Touch
             </h1>
           </div>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Ready to elevate your brand with premium ambience and meditation
             visuals? Let&apos;s connect to discuss your goals and create
             exceptional content that resonates with your audience.
@@ -109,10 +109,10 @@ const ContactSection = () => {
                           <method.icon className="h-5 w-5 text-brand-secondary" />
                         </div>
                         <div className="flex-1">
-                          <h3 className="font-semibold text-muted-foreground text-sm mb-1">
+                          <h3 className="font-semibold text-muted-foreground text-lg mb-1">
                             {method.title}
                           </h3>
-                          <p className="text-muted-foreground text-xs mb-2">
+                          <p className="text-muted-foreground text-sm mb-2">
                             {method.description}
                           </p>
                           <a
@@ -150,7 +150,7 @@ const ContactSection = () => {
                     >
                       <Label
                         htmlFor={field.id}
-                        className="text-brand-secondary font-medium mb-2"
+                        className="text-brand-secondary text-lg font-medium mb-2"
                       >
                         {field.label}
                         {field.required && (
@@ -167,7 +167,7 @@ const ContactSection = () => {
                           handleInputChange(field.id, e.target.value)
                         }
                         required={field.required}
-                        className="mt-1"
+                        className="mt-1 text-sm"
                       />
                     </motion.div>
                   ))}
@@ -180,7 +180,7 @@ const ContactSection = () => {
                   >
                     <Label
                       htmlFor="message"
-                      className="text-brand-secondary font-medium mb-2"
+                      className="text-brand-secondary text-lg font-medium mb-2"
                     >
                       Project Details
                       <span className="text-brand-secondary ml-1">*</span>
@@ -193,7 +193,7 @@ const ContactSection = () => {
                         handleInputChange("message", e.target.value)
                       }
                       required
-                      className="mt-1 min-h-[120px]"
+                      className="mt-1 text-sm min-h-[120px]"
                     />
                   </motion.div>
 
@@ -206,7 +206,7 @@ const ContactSection = () => {
                   >
                     <Button
                       type="submit"
-                      className="w-full primary-button-gradient transition-colors py-7 duration-300"
+                      className="w-full text-xl uppercase primary-button-gradient transition-colors py-7 duration-300"
                     >
                       <Send className="h-4 w-4 mr-2" />
                       Send Message
