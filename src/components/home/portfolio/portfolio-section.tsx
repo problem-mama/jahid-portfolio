@@ -8,7 +8,7 @@ export default function PortfolioSection() {
   return (
     <div id="portfolio">
       <div className="container mx-auto px-4 flex flex-col gap-y-10 py-10 md:py-15">
-        <h1 className="text-4xl font-extrabold uppercase text-center">
+        <h1 className="text-5xl font-extrabold uppercase text-center">
           My <span className="gradient-text10"> Portfolio</span>
         </h1>
 
@@ -17,7 +17,7 @@ export default function PortfolioSection() {
             <TabsList className="grid grid-cols-5 gap-2 items-center  h-12 mb-2 bg-brand-secondary/10 rounded-lg border border-brand-secondary/20 p-1">
               {categories.map((cat) => (
                 <TabsTrigger
-                  className=" data-[state=active]:bg-brand-secondary data-[state=active]:text-brand-inverse data-[state=active]:shadow-md hover:bg-brand-secondary/20 rounded-lg transition-all duration-200"
+                  className=" data-[state=active]:bg-brand-secondary data-[state=active]:text-brand-inverse data-[state=active]:shadow-md hover:bg-brand-secondary/20 rounded-lg transition-all uppercase font-medium duration-200"
                   key={cat}
                   value={cat}
                 >

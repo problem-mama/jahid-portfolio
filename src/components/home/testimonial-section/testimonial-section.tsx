@@ -39,10 +39,10 @@ const TestimonialSection = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-          <h1 className="text-4xl font-extrabold  uppercase mb-4">
+          <h1 className="text-5xl font-extrabold  uppercase mb-4">
             What <span className="gradient-text10">Clients Say</span>
           </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Don&apos;t just take our word for it. Here&apos;s what our satisfied
             clients have to say about their experience working with us.
           </p>

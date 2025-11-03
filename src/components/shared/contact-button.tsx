@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 function ContactButton() {
   return (
-    <Button className="primary-button-gradient font-medium">
+    <Button className="primary-button-gradient uppercase font-medium">
       <motion.span>Get Started</motion.span>
     </Button>
   );
