@@ -9,10 +9,31 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
-// here you can add metadata for your application
 export const metadata: Metadata = {
   title: "Jahid visuals",
   description: "Grow your audience with premium ambience videos",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://jahidvisuals.com",
+    siteName: "Jahid Visuals",
+    title: "Jahid Visuals - Premium Ambience Videos",
+    description: "Grow your audience with premium ambience videos",
+    images: [
+      {
+        url: "/jahid_hasan.png",
+        width: 1200,
+        height: 630,
+        alt: "Jahid Visuals - Premium Ambience Videos",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Jahid Visuals - Premium Ambience Videos",
+    description: "Grow your audience with premium ambience videos",
+    images: ["/jahid_hasan.png"],
+  },
 };
 
 export default function RootLayout({
