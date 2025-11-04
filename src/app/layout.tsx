@@ -34,6 +34,9 @@ export const metadata: Metadata = {
     description: "Grow your audience with premium ambience videos",
     images: ["https://jahidvisuals.com/jahid_hasan.png"],
   },
+  other: {
+    "fb:app_id": "0",
+  },
 };
 
 export default function RootLayout({
