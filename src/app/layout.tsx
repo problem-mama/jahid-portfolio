@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     images: ["https://jahidvisuals.com/jahid_hasan.png"],
   },
   other: {
-    "fb:app_id": "0",
+    "fb:app_id": "227967939815575",
   },
 };
 
