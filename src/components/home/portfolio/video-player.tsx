@@ -21,10 +21,10 @@ export default function VideoPlayer({ src }: { src: string }) {
       />
 
       {/* 🔹 Black Overlay */}
-      <motion.div
+      {/* <motion.div
         className="absolute inset-0 bg-black/60 transition-all duration-300 group-hover:bg-black/40"
         animate={{ opacity: 1 }}
-      />
+      /> */}
     </div>
   );
 }
