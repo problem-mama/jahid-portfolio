@@ -23,7 +23,6 @@ const HeroSection = () => {
 
       <motion.div className="relative z-10 container mx-auto px-4 flex flex-col gap-10 pt-34 pb-20 text-center black-red ">
         <motion.div className="flex flex-col justify-center items-center text-center space-y-6 max-w-4xl mx-auto">
-          {/* Main Heading */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -35,7 +34,6 @@ const HeroSection = () => {
             <span className="text-white">PREMIUM AMBIENCE VIDEOS</span>
           </motion.h1>
 
-          {/* Subtitle */}
           <motion.h4
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
