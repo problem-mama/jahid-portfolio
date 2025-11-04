@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: "Grow your audience with premium ambience videos",
     images: [
       {
-        url: "/jahid_hasan.png",
+        url: "https://jahidvisuals.com/jahid_hasan.png",
         width: 1200,
         height: 630,
         alt: "Jahid Visuals - Premium Ambience Videos",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Jahid Visuals - Premium Ambience Videos",
     description: "Grow your audience with premium ambience videos",
-    images: ["/jahid_hasan.png"],
+    images: ["https://jahidvisuals.com/jahid_hasan.png"],
   },
 };
 
