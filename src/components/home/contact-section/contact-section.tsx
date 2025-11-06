@@ -6,9 +6,21 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import * as motion from "framer-motion/client";
-import { Mail, Phone, MapPin, Send, MessageCircle } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Send,
+  MessageCircle,
+  Instagram,
+  User2,
+  Facebook,
+  MessageSquareMore,
+  Linkedin,
+} from "lucide-react";
 import { contactInfo, contactFormFields } from "../helper";
 import { useState } from "react";
+import Link from "next/link";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -74,13 +86,6 @@ const ContactSection = () => {
       description: "Call us Anytime",
       value: contactInfo.phone,
       href: `tel:${contactInfo.phone}`,
-    },
-    {
-      icon: MapPin,
-      title: "Visit Us",
-      description: "Come say hello at our office",
-      value: contactInfo.address,
-      href: "#",
     },
   ];
 
@@ -156,6 +161,65 @@ const ContactSection = () => {
                   </Card>
                 </motion.div>
               ))}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 2 * 0.1 }}
+                viewport={{ once: true }}
+              >
+                <Card className="bg-background border border-brand-secondary/20 hover:border-brand-secondary/40 transition-all duration-300 hover:shadow-md">
+                  <CardContent className="p-4">
+                    <div className="flex items-start space-x-4">
+                      <div className="p-2 bg-brand-secondary/10 rounded-lg">
+                        <User2 className="h-5 w-5 text-brand-secondary" />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="font-semibold text-muted-foreground text-lg mb-1">
+                          Social
+                        </h3>
+                        <p className="text-muted-foreground text-sm mb-2">
+                          Connect with us on any platform for updates and more
+                        </p>
+                        <div className="flex flex-row gap-4">
+                          <Link
+                            href="https://www.instagram.com/yourprofile"
+                            target="_blank"
+                            className="text-brand-secondary"
+                            rel="noopener noreferrer"
+                          >
+                            <Instagram />
+                          </Link>
+                          <Link
+                            href="https://www.facebook.com/yourprofile/inbox"
+                            target="_blank"
+                            className="text-brand-secondary"
+                            rel="noopener noreferrer"
+                          >
+                            <Facebook />
+                          </Link>
+
+                          <Link
+                            href="https://www.facebook.com/yourprofile/inbox"
+                            target="_blank"
+                            className="text-brand-secondary"
+                            rel="noopener noreferrer"
+                          >
+                            <MessageSquareMore />
+                          </Link>
+                          <Link
+                            href="https://www.facebook.com/yourprofile/inbox"
+                            target="_blank"
+                            className="text-brand-secondary"
+                            rel="noopener noreferrer"
+                          >
+                            <Linkedin />
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
             </div>
           </motion.div>
 
