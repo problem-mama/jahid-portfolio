@@ -1,5 +1,5 @@
 export type TPortfolio = {
-  id: number;
+  id: number | string;
   title: string;
   category: string;
   src: string;
@@ -35,13 +35,25 @@ export const mockVideos: TPortfolio[] = [
     id: 3,
     title: "Deep Focus",
     category: "Rain",
-    src: "/portfolio/Feature-4.mp4",
+    src: "/portfolio/Rain-1.mp4",
   },
   {
     id: 4,
     title: "Stress Relief",
     category: "Rain",
-    src: "/portfolio/Feature-4.mp4",
+    src: "/portfolio/Rain-2.mp4",
+  },
+  {
+    id: "rain-3",
+    title: "Stress Relief",
+    category: "Rain",
+    src: "/portfolio/Rain-3.mp4",
+  },
+  {
+    id: 4,
+    title: "Stress Relief",
+    category: "Rain",
+    src: "/portfolio/Rain-4.mp4",
   },
   {
     id: 5,
