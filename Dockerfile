@@ -40,7 +40,7 @@ COPY --from=build /app/.env ./.env
 COPY .env .env
 
 # Expose the port Next.js will run on
-EXPOSE 3001
+EXPOSE 3010
 
 # Start the Next.js app in production mode
 CMD ["npm", "start"]
