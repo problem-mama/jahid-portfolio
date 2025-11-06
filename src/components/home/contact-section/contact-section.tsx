@@ -16,19 +16,48 @@ const ContactSection = () => {
     email: "",
     message: "",
   });
+  const [isLoading, setIsLoading] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<
+    "idle" | "success" | "error"
+  >("idle");
 
   const handleInputChange = (field: string, value: string) => {
     setFormData((prev) => ({
       ...prev,
       [field]: value,
     }));
+    // Reset status when user starts typing again
+    if (submitStatus !== "idle") {
+      setSubmitStatus("idle");
+    }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
-    // You can add your form submission logic here
+    setIsLoading(true);
+    setSubmitStatus("idle");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send message");
+      }
+
+      setSubmitStatus("success");
+      setFormData({ name: "", email: "", message: "" }); // Reset form
+    } catch (error) {
+      console.error("Error sending message:", error);
+      setSubmitStatus("error");
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const contactMethods = [
@@ -159,15 +188,17 @@ const ContactSection = () => {
                       </Label>
 
                       <Input
-                        id={field.id}
+                        name={field.id}
                         type={field.type}
                         placeholder={field.placeholder}
-                        value={formData[field.id as keyof typeof formData]}
+                        value={
+                          formData[field.id as keyof typeof formData] || ""
+                        }
                         onChange={(e) =>
                           handleInputChange(field.id, e.target.value)
                         }
                         required={field.required}
-                        className="mt-1 text-sm"
+                        className="mt-1 text-sm text-white"
                       />
                     </motion.div>
                   ))}
@@ -193,7 +224,7 @@ const ContactSection = () => {
                         handleInputChange("message", e.target.value)
                       }
                       required
-                      className="mt-1 text-sm min-h-[120px]"
+                      className="mt-1 text-sm min-h-[120px] text-white"
                     />
                   </motion.div>
 
@@ -206,10 +237,30 @@ const ContactSection = () => {
                   >
                     <Button
                       type="submit"
-                      className="w-full text-xl uppercase primary-button-gradient transition-colors py-7 duration-300"
+                      disabled={isLoading}
+                      className={`w-full text-xl uppercase primary-button-gradient transition-colors py-7 duration-300 ${
+                        submitStatus === "success"
+                          ? "bg-green-500"
+                          : submitStatus === "error"
+                          ? "bg-red-500"
+                          : ""
+                      }`}
                     >
-                      <Send className="h-4 w-4 mr-2" />
-                      Send Message
+                      {isLoading ? (
+                        <>
+                          <span className="animate-spin mr-2">⌛</span>
+                          Sending...
+                        </>
+                      ) : submitStatus === "success" ? (
+                        <>✓ Message Sent!</>
+                      ) : submitStatus === "error" ? (
+                        <>✗ Failed to Send</>
+                      ) : (
+                        <>
+                          <Send className="h-4 w-4 mr-2" />
+                          Send Message
+                        </>
+                      )}
                     </Button>
                   </motion.div>
                 </form>
