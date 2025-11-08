@@ -1,30 +1,42 @@
 "use client";
-import { motion } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 
 export default function VideoPlayer({ src }: { src: string }) {
   const videoRef = useRef<HTMLVideoElement>(null);
 
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            video.play();
+          } else {
+            video.pause();
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    observer.observe(video);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <div className="relative w-full h-[450px] rounded-lg overflow-hidden group">
-      {/* Video */}
+    <div className="relative w-full h-[450px] rounded-lg overflow-hidden">
       <video
         ref={videoRef}
         src={src}
-        className="w-full h-full object-cover rounded-lg"
-        controls={false}
-        preload="metadata"
         muted
         loop
-        autoPlay
         playsInline
+        preload="none"
+        className="w-full h-full object-cover rounded-lg"
       />
-
-      {/* 🔹 Black Overlay */}
-      {/* <motion.div
-        className="absolute inset-0 bg-black/60 transition-all duration-300 group-hover:bg-black/40"
-        animate={{ opacity: 1 }}
-      /> */}
     </div>
   );
 }
