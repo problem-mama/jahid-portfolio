@@ -8,15 +8,14 @@ import { Textarea } from "@/components/ui/textarea";
 import * as motion from "framer-motion/client";
 import {
   Mail,
-  Phone,
   Send,
   MessageCircle,
   Instagram,
   User2,
   Linkedin,
-  Youtube,
   X,
 } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import { contactInfo, contactFormFields } from "../helper";
 import { useState } from "react";
 import Link from "next/link";
@@ -80,7 +79,7 @@ const ContactSection = () => {
       href: `mailto:${contactInfo.email}`,
     },
     {
-      icon: Phone,
+      icon: FaWhatsapp,
       title: "Call Us",
       description: "Call us Anytime",
       value: contactInfo.phone,

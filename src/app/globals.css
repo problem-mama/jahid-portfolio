@@ -244,3 +244,7 @@ h1,h2{
     font-style: normal;
     letter-spacing: 1px;
 }
+
+.nav-text {
+  font-family: 'Druk Cyr', sans-serif;
+}

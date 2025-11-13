@@ -38,9 +38,9 @@ export function Navbar() {
                 alt="Jahid Hasan creating ambient visuals"
                 width={35}
                 height={35}
-                className="rounded-full mb-2"
+                className="rounded-full mb-1.5"
               />
-              <p className="text-4xl font-extrabold text-white uppercase">
+              <p className="text-4xl font-extrabold text-white uppercase nav-text">
                 <span className="gradient-text10">Jahid</span> Visuals
               </p>
             </div>
