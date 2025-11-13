@@ -69,9 +69,9 @@ const ServiceSection = () => {
     >
       <motion.div className="container mx-auto px-4 flex flex-col gap-y-10   py-10 md:py-15">
         <div>
-          <h1 className="text-5xl font-extrabold  uppercase text-center">
+          <h2 className="text-5xl font-extrabold uppercase text-center">
             My <span className="gradient-text10">Services</span>
-          </h1>
+          </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {services.map((service, index) => (

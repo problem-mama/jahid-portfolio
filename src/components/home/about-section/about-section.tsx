@@ -23,7 +23,7 @@ const AboutSection = () => {
             <div>
               <Image
                 src="/jahid_hasan.png"
-                alt="Profile"
+                alt="Jahid Hasan creating ambient visuals"
                 height={700}
                 width={700}
                 className="rounded-2xl object-cover"

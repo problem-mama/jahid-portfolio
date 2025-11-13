@@ -30,7 +30,7 @@ export const testimonials = [
     content:
       "Jahid's meditation videos have transformed my content strategy. My audience engagement has increased by 300% since using his ambience videos. The quality is exceptional and the results speak for themselves.",
     rating: 5,
-    avatar: "/testimonial-avatar-1.jpg",
+    // avatar: "/testimonial-avatar-1.jpg",
   },
   {
     id: 2,
@@ -40,7 +40,7 @@ export const testimonials = [
     content:
       "Working with Jahid has been a game-changer for my meditation channel. His videos are not just beautiful but strategically designed to keep viewers engaged. My subscriber count doubled in just 3 months.",
     rating: 5,
-    avatar: "/testimonial-avatar-2.jpg",
+    // avatar: "/testimonial-avatar-2.jpg",
   },
   {
     id: 3,
@@ -50,7 +50,7 @@ export const testimonials = [
     content:
       "The ambience videos Jahid created for our brand perfectly capture our vision. They've become the backbone of our content marketing strategy. Professional, creative, and incredibly effective.",
     rating: 5,
-    avatar: "/testimonial-avatar-3.jpg",
+    // avatar: "/testimonial-avatar-3.jpg",
   },
   {
     id: 4,
@@ -60,7 +60,7 @@ export const testimonials = [
     content:
       "I've tried many video creators, but Jahid's work stands out. His understanding of meditation content and audience psychology is unmatched. My channel went from 10K to 100K subscribers with his videos.",
     rating: 5,
-    avatar: "/testimonial-avatar-4.jpg",
+    // avatar: "/testimonial-avatar-4.jpg",
   },
   {
     id: 5,
@@ -70,7 +70,7 @@ export const testimonials = [
     content:
       "Jahid doesn't just create videos, he creates experiences. Each video is crafted with such attention to detail that it resonates deeply with viewers. My meditation app's user retention improved dramatically.",
     rating: 5,
-    avatar: "/testimonial-avatar-5.jpg",
+    // avatar: "/testimonial-avatar-5.jpg",
   },
   {
     id: 6,
@@ -80,7 +80,7 @@ export const testimonials = [
     content:
       "The ROI on Jahid's videos is incredible. What used to take us weeks to create, he delivers in days with superior quality. Our meditation content now consistently ranks in the top search results.",
     rating: 5,
-    avatar: "/testimonial-avatar-6.jpg",
+    // avatar: "/testimonial-avatar-6.jpg",
   },
 ];
 
@@ -140,9 +140,10 @@ export const contactInfo = {
   phone: "+8801777333714",
   address: "123 Wellness Street, Mindful City, MC 12345",
   socialMedia: {
-    instagram: "https://instagram.com/jahidmeditation",
+    instagram: "https://www.instagram.com/jahidvisuals",
     youtube: "https://youtube.com/@jahidmeditation",
-    linkedin: "https://linkedin.com/in/jahidhasan",
+    linkedin: "https://www.linkedin.com/in/jah1dhasan",
+    x: "https://x.com/jahidvisualss",
   },
 };
 

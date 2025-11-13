@@ -39,9 +39,9 @@ const TestimonialSection = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-          <h1 className="text-5xl font-extrabold  uppercase mb-4">
+          <h2 className="text-5xl font-extrabold uppercase mb-4">
             What <span className="gradient-text10">Clients Say</span>
-          </h1>
+          </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Don&apos;t just take our word for it. Here&apos;s what our satisfied
             clients have to say about their experience working with us.
@@ -93,11 +93,11 @@ const TestimonialSection = () => {
                       <div>
                         <div className="flex items-center w-full space-x-3">
                           <Avatar className="h-12 w-12 border-2 border-brand-secondary/20">
-                            <AvatarImage
+                            {/* <AvatarImage
                               src={testimonial.avatar}
                               alt={testimonial.name}
                               className="object-cover"
-                            />
+                            /> */}
                             <AvatarFallback className="bg-brand-secondary/10 text-brand-secondary font-semibold">
                               {testimonial.name
                                 .split(" ")

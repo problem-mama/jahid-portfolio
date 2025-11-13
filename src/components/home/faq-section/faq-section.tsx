@@ -33,10 +33,10 @@ const FaqSection = () => {
         >
           <div className="flex items-center justify-center mb-4">
             <HelpCircle className="h-8 w-8 text-brand-highlight mr-3" />
-            <h1 className="text-5xl font-bold uppercase">
+            <h2 className="text-5xl font-bold uppercase">
               <span className="gradient-text10"> Frequently Asked</span>{" "}
               Questions
-            </h1>
+            </h2>
           </div>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Got questions? We&apos;ve got answers. Here are the most common

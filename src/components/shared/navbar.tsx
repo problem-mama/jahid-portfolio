@@ -3,12 +3,13 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Home, User, Settings, Mail } from "lucide-react";
+import { Menu, X, User, Settings, Mail, Video } from "lucide-react";
 import ContactButton from "./contact-button";
+import Image from "next/image";
 
 const navItems = [
-  { name: "Home", href: "#home", icon: Home },
   { name: "About", href: "#about", icon: User },
+  { name: "Portfolio", href: "#portfolio", icon: Video },
   { name: "Services", href: "#services", icon: Settings },
   { name: "Contact", href: "#contact", icon: Mail },
 ];
@@ -29,11 +30,20 @@ export function Navbar() {
           <motion.div
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="flex-shrink-0"
+            className="shrink-0 "
           >
-            <h1 className="text-4xl font-extrabold text-white uppercase">
-              <span className="gradient-text10">Jahid</span> Visuals
-            </h1>
+            <div className="flex gap-2 items-center">
+              <Image
+                src="/android-chrome-512x512.png"
+                alt="Jahid Hasan creating ambient visuals"
+                width={35}
+                height={35}
+                className="rounded-full mb-2"
+              />
+              <p className="text-4xl font-extrabold text-white uppercase">
+                <span className="gradient-text10">Jahid</span> Visuals
+              </p>
+            </div>
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -73,6 +83,7 @@ export function Navbar() {
               size="sm"
               onClick={() => setIsOpen(!isOpen)}
               className="inline-flex items-center justify-center p-2 text-brand-highlight hover:text-golden-honey"
+              aria-label="Menu button"
             >
               <motion.div
                 animate={{ rotate: isOpen ? 180 : 0 }}

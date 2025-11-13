@@ -13,9 +13,9 @@ export default function PortfolioSection() {
   return (
     <div id="portfolio">
       <div className="container mx-auto px-4 flex flex-col gap-y-10 py-10 md:py-15">
-        <h1 className="text-5xl font-extrabold uppercase text-center">
+        <h2 className="text-5xl font-extrabold uppercase text-center">
           My <span className="gradient-text10"> Portfolio</span>
-        </h1>
+        </h2>
 
         <Tabs
           value={activeTab}

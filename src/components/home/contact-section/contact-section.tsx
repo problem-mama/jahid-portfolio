@@ -9,14 +9,13 @@ import * as motion from "framer-motion/client";
 import {
   Mail,
   Phone,
-  MapPin,
   Send,
   MessageCircle,
   Instagram,
   User2,
-  Facebook,
-  MessageSquareMore,
   Linkedin,
+  Youtube,
+  X,
 } from "lucide-react";
 import { contactInfo, contactFormFields } from "../helper";
 import { useState } from "react";
@@ -89,6 +88,24 @@ const ContactSection = () => {
     },
   ];
 
+  const socialLinks = [
+    {
+      icon: Instagram,
+      label: "Instagram",
+      href: contactInfo.socialMedia.instagram,
+    },
+    {
+      icon: X,
+      label: "X",
+      href: contactInfo.socialMedia.x,
+    },
+    {
+      icon: Linkedin,
+      label: "LinkedIn",
+      href: contactInfo.socialMedia.linkedin,
+    },
+  ];
+
   return (
     <motion.div
       id="contact"
@@ -106,9 +123,9 @@ const ContactSection = () => {
         >
           <div className="flex items-center justify-center mb-4">
             <MessageCircle className="h-8 w-8 text-brand-primary mr-3" />
-            <h1 className="text-5xl font-bold  uppercase">
+            <h2 className="text-5xl font-bold uppercase">
               <span className="gradient-text10"> Get In</span> Touch
-            </h1>
+            </h2>
           </div>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Ready to elevate your brand with premium ambience and meditation
@@ -181,39 +198,18 @@ const ContactSection = () => {
                           Connect with us on any platform for updates and more
                         </p>
                         <div className="flex flex-row gap-4">
-                          <Link
-                            href="https://www.instagram.com/yourprofile"
-                            target="_blank"
-                            className="text-brand-secondary"
-                            rel="noopener noreferrer"
-                          >
-                            <Instagram />
-                          </Link>
-                          <Link
-                            href="https://www.facebook.com/yourprofile/inbox"
-                            target="_blank"
-                            className="text-brand-secondary"
-                            rel="noopener noreferrer"
-                          >
-                            <Facebook />
-                          </Link>
-
-                          <Link
-                            href="https://www.facebook.com/yourprofile/inbox"
-                            target="_blank"
-                            className="text-brand-secondary"
-                            rel="noopener noreferrer"
-                          >
-                            <MessageSquareMore />
-                          </Link>
-                          <Link
-                            href="https://www.facebook.com/yourprofile/inbox"
-                            target="_blank"
-                            className="text-brand-secondary"
-                            rel="noopener noreferrer"
-                          >
-                            <Linkedin />
-                          </Link>
+                          {socialLinks.map(({ icon: Icon, label, href }) => (
+                            <Link
+                              key={label}
+                              href={href}
+                              target="_blank"
+                              className="text-brand-secondary"
+                              rel="noopener noreferrer"
+                              aria-label={`Connect on ${label}`}
+                            >
+                              <Icon />
+                            </Link>
+                          ))}
                         </div>
                       </div>
                     </div>

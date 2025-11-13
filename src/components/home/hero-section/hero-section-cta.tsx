@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Play, Video } from "lucide-react";
+import Link from "next/link";
 
 function HeroSectionCTA() {
   return (
@@ -14,17 +15,23 @@ function HeroSectionCTA() {
       <Button
         size="lg"
         className="primary-button-gradient  px-12 py-8 text-lg font-semibold rounded-lg transition-all duration-300 uppercase"
+        asChild
       >
-        <Play className="mr-2 h-5 w-5" />
-        Work with me
+        <Link href={"#contact"}>
+          <Play className="mr-2 h-5 w-5" />
+          Work with me
+        </Link>
       </Button>
       <Button
         variant="outline"
         size="lg"
         className="border-2 border-brand-secondary text-brand-secondary hover:bg-brand-secondary hover:text-white px-12 py-8 text-lg font-semibold rounded-lg transition-all duration-300  bg-transparent uppercase"
+        asChild
       >
-        <Video className="mr-2 h-5 w-5" />
-        See my work
+        <Link href={"#portfolio"}>
+          <Video className="mr-2 h-5 w-5" />
+          See my work
+        </Link>
       </Button>
     </motion.div>
   );
