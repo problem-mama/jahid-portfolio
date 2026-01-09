@@ -137,7 +137,7 @@ export const faqs = [
 
 export const contactInfo = {
   email: "dreamyjahidul@gmail.com",
-  phone: "+8801777333714",
+  phone: "8801777333714",
   address: "123 Wellness Street, Mindful City, MC 12345",
   socialMedia: {
     instagram: "https://www.instagram.com/jahidvisuals",

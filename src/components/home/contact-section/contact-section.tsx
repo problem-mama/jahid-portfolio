@@ -83,7 +83,7 @@ const ContactSection = () => {
       title: "Call Us",
       description: "Call us Anytime",
       value: contactInfo.phone,
-      href: `tel:${contactInfo.phone}`,
+      href: `https://wa.me/${contactInfo.phone}`,
     },
   ];
 
